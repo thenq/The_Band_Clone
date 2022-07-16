@@ -27,6 +27,7 @@ html {
   right: 0;
   background-color: var(--black);
   height: var(--header-height);
+  z-index: 999;
 }
 
 #nav {
@@ -79,13 +80,11 @@ html {
   background-color: var(--white);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 #nav .sub-nav a {
   color: var(--black);
   padding: 0 16px;
   line-height: 38px;
 }
-
 #nav .nav-arrow-down {
   font-size: 12px;
 }
@@ -96,13 +95,11 @@ html {
   padding: 0 21px;
   text-align: center;
 }
-
 #header .search-btn:hover {
   color: var(--white) !important;
   background-color: #f44336 !important;
   cursor: pointer;
 }
-
 #header .search-icon {
   color: var(--white);
   line-height: var(--header-height);
@@ -110,11 +107,30 @@ html {
 
 /* Slider */
 #slider {
+  position: relative;
   margin-top: var(--header-height);
-  min-height: 500px;
-  background-color: #333;
+  padding-top: 50%;
+  background:
+    url('/assets/img/slider-1.jpg') top center / cover no-repeat,
+    url('/assets/img/slider-2.jpg'),
+    url('/assets/img/slider-3.jpg');
 }
-
+#slider .text-content {
+  position: absolute;
+  bottom: var(--header-height);
+  text-align: center;
+  left: 0;
+  right: 0;
+  color: var(--white);
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+}
+#slider .text-description {
+  font-size: 14px;
+}
 
 /* Content */
 #content {
