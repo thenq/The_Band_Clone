@@ -76,7 +76,6 @@ html {
   background-color: var(--black);
   height: var(--header-height);
   z-index: 999;
-  overflow: hidden;
 }
 
 #nav {
@@ -149,6 +148,13 @@ html {
   color: var(--white) !important;
   background-color: #f44336 !important;
   cursor: pointer;
+}
+
+#header .mobile-menu-btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 #header .mobile-menu-btn:hover {
